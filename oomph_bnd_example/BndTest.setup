@@ -55,13 +55,13 @@
     <requirement
         name="bndtools.m2e.feature.feature.group"/>
     <repository
-        url="https://dl.bintray.com/bndtools/bndtools/latest/"/>
+        url="https://bndtools.ci.cloudbees.com/job/bndtools.master/2758/artifact/build/generated/p2/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone.repo"
-      remoteURI="https://github.com/peterkir/example.bnd.rcp.git"
+      remoteURI="https://github.com/osgi/enroute.workspace.git"
       pushURI=""
       checkoutBranch="master">
     <annotation
