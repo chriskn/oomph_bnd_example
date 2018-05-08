@@ -53,7 +53,8 @@
     <requirement
         name="bndtools.main.feature.feature.group"/>
     <requirement
-        name="bndtools.m2e.feature.feature.group"/>
+        name="bndtools.m2e.feature.feature.group"
+        versionRange="[4.0.0,5.0.0)"/>
     <repository
         url="https://bndtools.ci.cloudbees.com/job/bndtools.master/2758/artifact/build/generated/p2/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
@@ -61,7 +62,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone.repo"
-      remoteURI="https://github.com/osgi/enroute.workspace.git"
+      remoteURI="https://github.com/osgi/osgi.enroute.bundles.git"
       pushURI=""
       checkoutBranch="master">
     <annotation
